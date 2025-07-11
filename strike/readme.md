@@ -7,8 +7,8 @@ Then we realise that the length of the string we pass as argument must be a divi
 
 From now on we will consider that I am using the program ./strike aabbccddee with aabbccddee a string passed as argument to the program (in gdb)
 ```gdb
-set args aabbccddee
-run
+(gdb) set args aabbccddee
+(gdb) run
 ```
 Then there is a 'a' function (or so it is named by IDA) that will be called for each of the characters of the input string (here 'aa' then 'bb' then 'cc'...). It checks if each character of this string is in 0-9, or A-Z or a-f.
 
