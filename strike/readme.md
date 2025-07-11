@@ -20,7 +20,7 @@ Then we learn that the length of the input must be 0xa2 so the total length of t
 
 Once we got all this we realize that the a function sends back a character for each character of our input. And that once we passed the transformation, our string must have been transformed into '# congratulations! this is a strike :-) you should now see the flag printed ... #'. I did not have the courage of reversing all the maths that transformed our input so I inputed 81x'00' and 81 x '01'. And looked at what was this string transformed into. For the 81 '00' the output was "acegikmoqsuwy! :(.bdfhjlnprtvxz#$-)acegikmoqsuwy! :(.bdfhjlnprtvxz#$-)acegikmoqsu". 
 
-So I wrote a python program that did the opposite of this : 
+So I wrote a python program that did the opposite of this `attack.py` : 
 ```python
 cible = '# congratulations! this is a strike :-) you should now see the flag printed ... #'
 
@@ -49,4 +49,4 @@ for i in range(81):
 
 print(result)
 ```
-And thus I got the flag.
+And thus I got the flag with ; `./strike $(python attack.py)`
