@@ -49,4 +49,4 @@ for i in range(81):
 
 print(result)
 ```
-And thus I got the flag with ; `./strike $(python attack.py)`
+And thus I got the flag with : `./strike $(python attack.py)`
