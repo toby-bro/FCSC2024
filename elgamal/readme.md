@@ -63,6 +63,7 @@ print(reply)
 
 # Send the forged signature to the server
 for i in reply:
+    nc_process.expect("\n")
     nc_process.expect(">>> ")  # Wait for the server prompt
     nc_process.sendline(str(i))
     print('sent')
