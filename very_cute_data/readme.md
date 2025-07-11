@@ -1,6 +1,6 @@
 # Very cute data
 
-    I had no idea what this data was. I thus found myself reading a [writeup of the year before](https://hackropole.fr/fr/writeups/fcsc2022-hardware-i2c-you-too/ea0d0518-63e6-4594-ac9c-9b4b02232d8e/)
+I had no idea what this data was. I thus found myself reading a [writeup of the year before](https://hackropole.fr/fr/writeups/fcsc2022-hardware-i2c-you-too/ea0d0518-63e6-4594-ac9c-9b4b02232d8e/)
 
 Once i had understood how this I2C works i went to writing the program to parse the data and extract the flag : extract.py 
 
@@ -50,4 +50,6 @@ for i in range(len(d1_samples)):
 print("FCSC{"+''.join([i[1] for i in d0_values])+"}")
 ```
 So I only needed to execute
- python extract.py very-cute-data.vcd
+```bash
+python extract.py very-cute-data.vcd
+```
